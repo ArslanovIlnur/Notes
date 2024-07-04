@@ -18,7 +18,7 @@ public class ReadNotes {
         int userId = user.getId();
         List<Notes> notesList = noteDao.readAllNotes(userId);
 
-        System.out.println("ID        |Заголовок     |     Текст");
+        System.out.println("ID        |Р—Р°РіРѕР»РѕРІРѕРє     |     РўРµРєСЃС‚");
         System.out.println("===============================================================");
         notesList.stream().forEach(notes ->
                 System.out.println(notes.getId() + " | " + notes.getHeading() + "    |    " + notes.getText() +
@@ -28,6 +28,6 @@ public class ReadNotes {
     }
 
     public static String description(){
-        return "Прочитать заметки";
+        return "РџСЂРѕС‡РёС‚Р°С‚СЊ Р·Р°РјРµС‚РєРё";
     }
 }

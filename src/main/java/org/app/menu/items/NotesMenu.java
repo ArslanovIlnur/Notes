@@ -15,7 +15,7 @@ public class NotesMenu {
     public static void note(User user) throws SQLException, IOException, InterruptedException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------------------------");
-        System.out.println("        Меню заметок       ");
+        System.out.println("        РњРµРЅСЋ Р·Р°РјРµС‚РѕРє       ");
         System.out.println("---------------------------");
         System.out.println("1. " + CreateNote.description());
         System.out.println("2. " + ReadNotes.description());
@@ -37,7 +37,7 @@ public class NotesMenu {
         } else if (command == 5) {
             ExitMenu.exitFromApp();
         } else {
-            System.out.println("неверная команда");
+            System.out.println("РЅРµРІРµСЂРЅР°СЏ РєРѕРјР°РЅРґР°");
             NotesMenu.note(user);
         }
     }

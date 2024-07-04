@@ -16,13 +16,13 @@ public class CreateNote {
 
         NoteDao noteDao = new NoteDaoImpl(DBConfig.dataSource());
 
-        System.out.println("Введите заголовок");
+        System.out.println("Р’РІРµРґРёС‚Рµ Р·Р°РіРѕР»РѕРІРѕРє");
         String heading = scanner.nextLine();
         if (heading.isEmpty()){
             heading = "NONE";
         }
 
-        System.out.println("Введите текст");
+        System.out.println("Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚");
         String text = scanner.nextLine();
 
         noteDao.addNote(heading, text, user);
@@ -30,6 +30,6 @@ public class CreateNote {
     }
 
     public static String description(){
-        return "Добавить заметку";
+        return "Р”РѕР±Р°РІРёС‚СЊ Р·Р°РјРµС‚РєСѓ";
     }
 }

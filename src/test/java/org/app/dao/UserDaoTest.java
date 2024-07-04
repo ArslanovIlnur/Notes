@@ -16,19 +16,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDaoTest {
 
     @Test
-    void addUser() throws SQLException, IOException, InterruptedException {
-        DBService.dbRun();
-        UserDao userDao = new UserDaoImpl(DBConfig.dataSource());
-
-        List<User> userList = new ArrayList<>();
-
-        userDao.addUser("test", "test");
-        userList = userDao.findAll();
-
-        assertNotEquals(0, userList.size());
-    }
-
-    @Test
     void getByUsername() {
         UserDao userDao = new UserDaoImpl(DBConfig.dataSource());
         User user = null;

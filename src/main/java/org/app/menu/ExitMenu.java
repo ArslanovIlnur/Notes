@@ -6,6 +6,6 @@ public class ExitMenu {
     }
 
     public static String description(){
-        return "Выход";
+        return "Р’С‹С…РѕРґ";
     }
 }

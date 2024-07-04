@@ -15,25 +15,25 @@ public class RegistrationMenu {
 
         UserDao userDao = new UserDaoImpl(DBConfig.dataSource());
 
-        System.out.println("Введите имя пользователя:");
+        System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ:");
         String username = scanner.nextLine();
 
         if (userDao.getByUsername(username) != null){
-            System.out.println("Пользователь с данным именем уже существует");
+            System.out.println("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ РґР°РЅРЅС‹Рј РёРјРµРЅРµРј СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
             MainMenu.mainMenu();
         } else {
 
-            System.out.println("Введите пароль:");
+            System.out.println("Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ:");
             String password = scanner.nextLine();
 
             userDao.addUser(username, password);
 
-            System.out.println("Регистрация прошла успешно");
+            System.out.println("Р РµРіРёСЃС‚СЂР°С†РёСЏ РїСЂРѕС€Р»Р° СѓСЃРїРµС€РЅРѕ");
             MainMenu.mainMenu();
         }
     }
 
     public static String description(){
-        return "Зарегистрироваться";
+        return "Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ";
     }
 }

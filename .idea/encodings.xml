@@ -2,6 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/ExitMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/MainMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/items/NotesMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/items/notes/CreateNote.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/items/notes/DeleteNote.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/items/notes/ReadNotes.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/items/user/EnterMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/app/menu/items/user/RegistrationMenu.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

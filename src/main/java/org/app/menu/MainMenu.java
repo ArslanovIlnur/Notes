@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class MainMenu {
     public static void mainMenu() throws SQLException, IOException, InterruptedException {
         System.out.println("----------------------");
-        System.out.println("     Главное меню     ");
+        System.out.println("     Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ     ");
         System.out.println("----------------------");
         System.out.println("1. " + EnterMenu.description());
         System.out.println("2. " + RegistrationMenu.description());
@@ -27,12 +27,12 @@ public class MainMenu {
         } else if (command == 3) {
             ExitMenu.exitFromApp();
         } else {
-            System.out.println("Неверная команда");
+            System.out.println("РќРµРІРµСЂРЅР°СЏ РєРѕРјР°РЅРґР°");
             MainMenu.mainMenu();
         }
     }
 
     public static String description(){
-        return "Главное меню";
+        return "Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ";
     }
 }

@@ -16,30 +16,30 @@ public class EnterMenu {
         UserDao userDao = new UserDaoImpl(DBConfig.dataSource());
 
 
-            System.out.println("Введите имя пользователя:");
+            System.out.println("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ:");
             Scanner scanner = new Scanner(System.in);
             String username = scanner.nextLine();
 
             User user = userDao.getByUsername(username);
 
             if (user == null) {
-                System.out.println("Пользователь \"" + username + "\" не найден");
+                System.out.println("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ \"" + username + "\" РЅРµ РЅР°Р№РґРµРЅ");
                 MainMenu.mainMenu();
             } else {
-                System.out.println("Введите пароль:");
+                System.out.println("Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ:");
                 String password = scanner.nextLine();
 
                 if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
-                    System.out.println("Успешно");
+                    System.out.println("РЈСЃРїРµС€РЅРѕ");
                     NotesMenu.note(user);
                 } else {
-                    System.out.println("Неверный Имя пользователя или пароль");
+                    System.out.println("РќРµРІРµСЂРЅС‹Р№ РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РёР»Рё РїР°СЂРѕР»СЊ");
                     MainMenu.mainMenu();
                 }
             }
     }
 
     public static String description(){
-        return "Войти";
+        return "Р’РѕР№С‚Рё";
     }
 }

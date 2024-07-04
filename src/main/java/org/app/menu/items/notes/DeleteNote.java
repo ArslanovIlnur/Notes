@@ -16,15 +16,15 @@ public class DeleteNote {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите ID записи для удаления:");
+        System.out.println("Р’РІРµРґРёС‚Рµ ID Р·Р°РїРёСЃРё РґР»СЏ СѓРґР°Р»РµРЅРёСЏ:");
         int id = scanner.nextInt();
 
         noteDao.delete(id);
-        System.out.println("Запись " + id + " удалена");
+        System.out.println("Р—Р°РїРёСЃСЊ " + id + " СѓРґР°Р»РµРЅР°");
         NotesMenu.note(user);
     }
 
     public static String description(){
-        return "Удалить запись";
+        return "РЈРґР°Р»РёС‚СЊ Р·Р°РїРёСЃСЊ";
     }
 }
