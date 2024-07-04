@@ -36,6 +36,6 @@ class NoteDaoTest {
 
         notes = noteDao.readAllNotes(user.getId());
 
-        assertNotNull(userDao.findAll());
+        assertNotNull(notes);
     }
 }
